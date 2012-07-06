@@ -29,11 +29,6 @@ export LC_COLLATE="en_US.UTF-8"
 alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
 alias grep='grep --color'
-alias slrn="slrn -n"
 alias man='LC_ALL=C LANG=C man'
-alias f=finger
 alias ls='ls -lh --color=auto '
-alias offlineimap-tty='offlineimap -u TTY.TTYUI'
-alias hnb-partecs='hnb $HOME/partecs/partecs-hnb.xml'
-alias rest2html-css='rst2html --embed-stylesheet --stylesheet-path=/usr/share/python-docutils/s5_html/themes/default/print.css'
-
+alias prep='ps -ef | grep'
