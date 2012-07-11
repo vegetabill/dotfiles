@@ -5,6 +5,11 @@
 ; (setq load-path (cons (expand-file-name "~/.emacs.d/emacs-rails-reloaded") load-path))
 ;  (require 'rails-autoload)
 
+(setq backup-directory-alist
+          `((".*" . ,temporary-file-directory)))
+    (setq auto-save-file-name-transforms
+          `((".*" ,temporary-file-directory t)))
+
 (autoload 'markdown-mode "markdown-mode.el" "Major mode for editing Markdown files" t) (setq auto-mode-alist (cons '("\\.md" . markdown-mode) auto-mode-alist))
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
