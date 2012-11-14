@@ -37,5 +37,5 @@ alias support='cd ~/studios/support'
 alias jss='./script/jruby_mingle_server'
 alias ss='./script/server'
 alias ssh='ssh -l wdephill'
-alias ass='mkdir -p tmp; rake asset:packager:build_all'
+alias ass='mkdir -p tmp; rake asset:packager:compile_and_build_all'
 
