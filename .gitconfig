@@ -1,0 +1,17 @@
+[user]
+  name = Bill DePhillips
+  email = bill.dephillips@gmail.com
+[alias]
+  co = checkout
+  st = status
+  ci = commit
+[diff]
+  renames = true
+[color]
+  ui = auto
+  diff = auto
+  interactive = auto
+  status = auto
+  branch = auto
+[credential]
+  helper = cache --timeout 3600
