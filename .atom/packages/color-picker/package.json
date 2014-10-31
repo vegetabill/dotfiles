@@ -1,0 +1,47 @@
+{
+  "name": "color-picker",
+  "main": "./lib/ColorPicker",
+  "version": "1.2.5",
+  "private": true,
+  "description": "A Color Picker for the Atom Editor. Right click a color and select color picker to open it.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thomaslindstrom/color-picker"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "readme": "# A Color Picker for Atom\n\nA color picker for Atom. Either right click a color and select `Color picker`, or hit `CMD-SHIFT-C`/`CTRL-ALT-C` anywhere. Currently reads HEX, HEXA, RGB, RGBA, HSL and HSLA.\n\nInspects Sass/LESS variables! [Take a look here.](http://t.hom.as/colorpicker4.mov)\n\n**NEW:** You can now open the color picker whenever, without input, using `CMD-SHIFT-C`/`CTRL-ALT-C`!\n\n## Preview\n\n![Color Picker in action](http://f.cl.ly/items/3g3T401o0o0F2m2O1z1K/output.gif)\n\n## To do\n\n- Stylus variable lookup\n- Context menu convertions\n- Preview color manipulation functions (lighten, darken)\n- Edit the color value\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/thomaslindstrom/color-picker/issues"
+  },
+  "homepage": "https://github.com/thomaslindstrom/color-picker",
+  "_id": "color-picker@1.2.5",
+  "dist": {
+    "shasum": "ec3f6b7317ff2dca9bf89ae1cd07b864198c4673"
+  },
+  "_resolved": "/private/var/folders/h9/g_2dpdnj5lz_lf3d25skz6m015x89p/T/d-114927-11770-xwjvmc/package.tgz",
+  "_from": "/private/var/folders/h9/g_2dpdnj5lz_lf3d25skz6m015x89p/T/d-114927-11770-xwjvmc/package.tgz",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [],
+    "extensions": {
+      ".coffee": [
+        "lib/ColorPicker-alphaSelector.coffee",
+        "lib/ColorPicker-convert.coffee",
+        "lib/ColorPicker-hueSelector.coffee",
+        "lib/ColorPicker-regexes.coffee",
+        "lib/ColorPicker-saturationSelector.coffee",
+        "lib/ColorPicker-view.coffee",
+        "lib/ColorPicker.coffee",
+        "lib/variable-inspector.coffee"
+      ],
+      ".json": [
+        "package.json"
+      ]
+    },
+    "folders": []
+  }
+}

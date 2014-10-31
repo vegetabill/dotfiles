@@ -1,8 +1,7 @@
 ######################################################################
-#           jdong's zshrc file v0.2.1 , based on:
+#         @wdephillips' zshrc file, based on:
+#         jdong's zshrc file v0.2.1 , based on:
 #		      mako's zshrc file, v0.1
-#
-#
 ######################################################################
 
 # next lets set some enviromental/shell pref stuff up
@@ -22,12 +21,29 @@ setopt EXTENDED_HISTORY		# puts timestamps in the history
 setopt MENUCOMPLETE
 setopt ALL_EXPORT
 
+# Allow for functions in the prompt.
+setopt PROMPT_SUBST
+
 # Set/unset  shell options
 setopt   notify globdots correct pushdtohome cdablevars autolist
 setopt   correctall autocd recexact longlistjobs
 setopt   autoresume histignoredups pushdsilent
 setopt   autopushd pushdminus extendedglob rcquotes mailwarning
 unsetopt bgnice autoparamslash
+
+# Autoload zsh functions.
+fpath=(~/.zsh/functions $fpath)
+autoload -U ~/.zsh/functions/*(:t)
+
+# Enable auto-execution of functions.
+typeset -ga preexec_functions
+typeset -ga precmd_functions
+typeset -ga chpwd_functions
+
+# Append git functions needed for prompt.
+preexec_functions+='preexec_update_git_vars'
+precmd_functions+='precmd_update_git_vars'
+chpwd_functions+='chpwd_update_git_vars'
 
 # Autoload zsh modules when they are referenced
 zmodload -a zsh/stat stat
@@ -54,8 +70,7 @@ EDITOR='vim'
    (( count = $count + 1 ))
     done
     PR_NO_COLOR="%{$terminfo[sgr0]%}"
-PS1="[$PR_BLUE%n$PR_WHITE@$PR_GREEN%U%m%u$PR_NO_COLOR:$PR_RED%2c$PR_NO_COLOR]%(!.#.$) "
-RPS1="$PR_LIGHT_YELLOW(%D{%m-%d %H:%M})$PR_NO_COLOR"
+PS1="[$PR_BLUE%n$PR_WHITE@$PR_GREEN%U%m%u$PR_NO_COLOR:$PR_RED%2c$PR_NO_COLOR$(prompt_git_info)]%(!.#.$) "
 #LANGUAGE=
 LC_ALL='en_US.UTF-8'
 LANG='en_US.UTF-8'
@@ -189,4 +204,3 @@ zstyle '*' single-ignored show
 bindkey -e
 
 source ~/.profile
-

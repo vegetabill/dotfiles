@@ -1,0 +1,16 @@
+'global':
+  'editor':
+    'softWrap': true
+    'invisibles': {}
+  'core':
+    'excludeVcsIgnoredPaths': false
+    'disabledPackages': [
+      'autocomplete'
+      'symbols-view'
+    ]
+  'exception-reporting':
+    'userId': '289196e9-d898-63ab-6d2f-83996a6adcdb'
+  'welcome':
+    'showOnStartup': false
+  'metrics':
+    'userId': '126476d7d0556288e3a1c5fee368aac2f8e89cfa'

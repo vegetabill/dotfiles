@@ -1,0 +1,7 @@
+{
+  "context-menu": {
+    ".tree-view": {
+      "Show in Folder": "show-in-folder:show_in_folder",
+    }
+  }
+}

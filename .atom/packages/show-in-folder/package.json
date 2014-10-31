@@ -1,0 +1,41 @@
+{
+  "name": "show-in-folder",
+  "main": "./lib/show-in-folder",
+  "version": "0.1.0",
+  "description": "Adds Show in Folder context entry on the sidebar",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Flynsarmy/atom-show-in-folder"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {},
+  "readme": "# Show in Folder\n\nAdds Show in Folder context entry on the sidebar\n\n![Context menu entry to open in Finder the folder your active file is in](https://raw.github.com/Flynsarmy/atom-show-in-folder/master/screenshot-1.png)\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/Flynsarmy/atom-show-in-folder/issues"
+  },
+  "homepage": "https://github.com/Flynsarmy/atom-show-in-folder",
+  "_id": "show-in-folder@0.1.0",
+  "dist": {
+    "shasum": "3c6975049f86f91578bc7b5f8f9415c1d8542a7d"
+  },
+  "_resolved": "/private/var/folders/h9/g_2dpdnj5lz_lf3d25skz6m015x89p/T/d-114931-15988-q8did0/package.tgz",
+  "_from": "/private/var/folders/h9/g_2dpdnj5lz_lf3d25skz6m015x89p/T/d-114931-15988-q8did0/package.tgz",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [],
+    "extensions": {
+      ".coffee": [
+        "lib/show-file.coffee",
+        "lib/show-in-folder.coffee"
+      ],
+      ".json": [
+        "package.json"
+      ]
+    },
+    "folders": []
+  }
+}
