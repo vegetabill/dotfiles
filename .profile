@@ -27,7 +27,7 @@ alias ip='ifconfig | grep "inet 10" | cut -f 2 -d " "'
 #fi
 
 # Goodreads
-alias gr='cd ~/goodreads/goodreads_rails/rails-root'
+alias gr='cd ~/goodreads/goodreads_rails/ng-root'
 export GOODREADS_DEV_EMAIL=`whoami`@goodreads.com
 alias ss='./script/server'
 

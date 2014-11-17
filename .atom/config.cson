@@ -1,6 +1,7 @@
 'global':
   'editor':
     'softWrap': true
+    'fontSize': 18
     'invisibles': {}
   'core':
     'excludeVcsIgnoredPaths': false
