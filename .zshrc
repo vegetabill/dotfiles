@@ -72,7 +72,7 @@ LC_CTYPE=C
 #### end exports
 unsetopt ALL_EXPORT
 
-PROMPT=$'[$PR_BLUE%n$PR_WHITE@$PR_GREEN%U%m%u$PR_NO_COLOR:$PR_RED%2c$PR_NO_COLOR$(prompt_git_info)]%(!.#.$)$PR_NO_COLOR '
+PROMPT=$'[$PR_CYAN%n$PR_WHITE@$PR_GREEN%U%m%u$PR_NO_COLOR:$PR_RED%2c$PR_NO_COLOR$(prompt_git_info)]%(!.#.$)$PR_NO_COLOR '
 
 autoload -U compinit
 compinit
