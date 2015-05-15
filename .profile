@@ -13,7 +13,10 @@ alias pgrep='ps -ef | grep'
 alias ip='ifconfig | grep "inet 10" | cut -f 2 -d " "'
 
 # Goodreads
-alias gr='cd ~/goodreads/goodreads_rails/rails-root && export SUPPRESS_LOG_NOISE=1'
+export GOODREADS_RAILS_ROOT=~/goodreads/goodreads_rails/rails-root
+source $GOODREADS_RAILS_ROOT/script/platform/aliases.sh
+
+alias gr='cd $GOODREADS_RAILS_ROOT && export SUPPRESS_LOG_NOISE=1'
 export GOODREADS_DEV_EMAIL=`whoami`@goodreads.com
 alias ss='./script/server'
 alias rake='bundle exec rake'
