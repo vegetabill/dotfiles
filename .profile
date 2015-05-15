@@ -23,5 +23,8 @@ alias rake='bundle exec rake'
 alias spring='bundle exec spring'
 alias post-review='post-review -o --target-groups=goodreads-ux-overhaul --target-people=clinew,itsachen,dbrewste,elaichen'
 
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+if [[ -d "$HOME/.rbenv" ]]; then
+  export PATH="$HOME/.rbenv/bin:$PATH"
+  eval "$(rbenv init -)"
+fi
+
