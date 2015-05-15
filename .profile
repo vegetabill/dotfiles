@@ -8,7 +8,7 @@ export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 ############## Aliases ##################
 alias grep='grep --color'
 alias ls='ls -lh'
-alias prep='ps -ef | grep'
+alias pgrep='ps -ef | grep'
 
 alias ip='ifconfig | grep "inet 10" | cut -f 2 -d " "'
 
