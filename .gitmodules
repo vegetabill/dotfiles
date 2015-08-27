@@ -1,6 +1,0 @@
-[submodule ".emacs.d/markdown-mode"]
-	path = .emacs.d/markdown-mode
-	url = git://jblevins.org/git/markdown-mode.git
-[submodule ".emacs.d/emacs-rails-reloaded"]
-	path = .emacs.d/emacs-rails-reloaded
-	url = https://github.com/dima-exe/emacs-rails-reloaded.git
