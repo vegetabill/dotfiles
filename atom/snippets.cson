@@ -24,11 +24,9 @@
   'puts logging':
     'prefix': 'p'
     'body': 'puts "[DEBUG] $1 => #{$1}"'
-'.source.ruby':
   'pry':
     'prefix': 'pry'
     'body': 'require "pry"; binding.pry'
-'.source.ruby':
   'rails debug logging':
     'prefix': 'rld'
     'body': 'Rails.logger.debug "[DEBUG] $1 => #{$1}"'
