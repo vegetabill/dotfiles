@@ -4,13 +4,17 @@ if [ -d "$HOME/bin" ] ; then
 fi
 
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
-
+export PATH=${PATH}:~/Library/Android/sdk/platform-tools
 ############## Aliases ##################
 alias grep='grep --color'
 alias ls='ls -lh'
 alias pgrep='ps -ef | grep'
 
 alias ip='ifconfig | grep "inet 10" | cut -f 2 -d " "'
+
+# Android
+export ANDROID_HOME=~/Library/Android/sdk
+export PATH=${PATH}:~/Library/Android/sdk/tools:~/Library/Android/sdk/platform-tools
 
 # Goodreads
 export GOODREADS_RAILS_ROOT=~/goodreads/goodreads_rails/rails-root
@@ -29,4 +33,3 @@ if [[ -d "$HOME/.rbenv" ]]; then
   export PATH="$HOME/.rbenv/bin:$PATH"
   eval "$(rbenv init -)"
 fi
-
