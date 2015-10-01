@@ -21,13 +21,13 @@ export GOODREADS_RAILS_ROOT=~/goodreads/goodreads_rails/rails-root
 if [[ -e "$GOODREADS_RAILS_ROOT/script/platform/aliases.sh" ]]; then
   source $GOODREADS_RAILS_ROOT/script/platform/aliases.sh
 fi
-
+export I_KNOW_ITS_A_DEV_ENV=true
 alias gr='cd $GOODREADS_RAILS_ROOT && export SUPPRESS_LOG_NOISE=1'
 export GOODREADS_DEV_EMAIL=`whoami`@goodreads.com
 alias ss='./script/server'
 alias rake='bundle exec rake'
 alias spring='bundle exec spring'
-alias post-review='post-review -o --target-groups=goodreads-ux-overhaul --target-people=clinew,itsachen,dbrewste,elaichen'
+alias post-review='post-review -o --target-groups=goodreads-ux-overhaul --target-people=clinew,flybycai,dbrewste,surenrk'
 
 if [[ -d "$HOME/.rbenv" ]]; then
   export PATH="$HOME/.rbenv/bin:$PATH"
