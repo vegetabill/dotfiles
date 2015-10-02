@@ -12,9 +12,14 @@ alias pgrep='ps -ef | grep'
 
 alias ip='ifconfig | grep "inet 10" | cut -f 2 -d " "'
 
+
 # Android
 export ANDROID_HOME=~/Library/Android/sdk
 export PATH=${PATH}:~/Library/Android/sdk/tools:~/Library/Android/sdk/platform-tools
+
+# Javascript
+export NODE_REPL_HISTORY_FILE=~/tmp/node_repl_history
+
 
 # Goodreads
 export GOODREADS_RAILS_ROOT=~/goodreads/goodreads_rails/rails-root
