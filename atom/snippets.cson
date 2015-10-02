@@ -20,13 +20,20 @@
 # Atom Flight Manual:
 # https://atom.io/docs/latest/using-atom-basic-customization#cson
 
+'.source.js.jsx':
+  'console log':
+    'prefix': 'log'
+    'body': 'console.log("$1");'
+  'console debug':
+    'prefix': 'con'
+    'body': 'console.log(`[DEBUG] $1: ${JSON.stringify($1)}`);'
 '.source.ruby':
   'puts logging':
     'prefix': 'p'
-    'body': 'puts "[DEBUG] $1 => #{$1}"'
+    'body': 'puts "[DEBUG] $1 => #{$1.inspect}"'
   'pry':
     'prefix': 'pry'
     'body': 'require "pry"; binding.pry'
   'rails debug logging':
     'prefix': 'rld'
-    'body': 'Rails.logger.debug "[DEBUG] $1 => #{$1}"'
+    'body': '::Rails.logger.debug "[DEBUG] $1 => #{$1.inspect}"'
