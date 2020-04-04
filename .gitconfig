@@ -1,22 +1,19 @@
 [user]
-  name = Bill DePhillips
-  email = bill.dephillips@gmail.com
+	name = Bill D
+	email = 355438+vegetabill@users.noreply.github.com 
 [alias]
-  co = checkout
-  st = status
-  ci = commit
-[diff]
-  renames = true
-[color]
-  ui = auto
-  diff = auto
-  interactive = auto
-  status = auto
-  branch = auto
-[credential]
-  helper = cache --timeout 3600
+	st=status
+        ci=commit
+        co=checkout
+[pager]
+        less
+
 [push]
-	default = upstream 
-[amazon]
-	append-cr-url = false
-	pull-request-by-default = false
+	default = current
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+[core]
+	askpass = git-gui--askpass
