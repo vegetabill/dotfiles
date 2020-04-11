@@ -1,4 +1,4 @@
-ZSH_TMUX_AUTOSTART=false
+#export ZSH_TMUX_AUTOSTART=true
 export TERM='xterm-256color'
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
@@ -11,7 +11,9 @@ export ZSH="/Users/bill/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 #ZSH_THEME="powerline"
-ZSH_THEME="agnoster"
+
+# https://github.com/vegetabill/agnoster-zsh-theme
+ZSH_THEME="agnoster-fork"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -72,7 +74,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(sudo git history taskwarrior tmux tmuxinator zsh-completions zsh-autosuggestions pyenv)
+plugins=(sudo git history taskwarrior tmux tmuxinator zsh-completions zsh-autosuggestions pyenv nvm)
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 autoload -U compinit && compinit
