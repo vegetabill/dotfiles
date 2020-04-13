@@ -12,7 +12,7 @@ root: ~/dev
 # Project hooks
 
 # Runs on project start, always
-on_project_start: "powerline-config --config-path=~/.config/powerline/tmux/default.json tmux setup"
+on_project_start: "powerline-config tmux setup"
 
 # Run on project start, the first time
 # on_project_first_start: command
@@ -39,22 +39,33 @@ on_project_start: "powerline-config --config-path=~/.config/powerline/tmux/defau
 # startup_window: logs
 
 windows:
-  - curriculum:
-      layout: main-horizontal
-      root: "~/dev/curriculum"
+  - crudtastic:
+      root: "~/dev"
+      layout: even-vertical
       panes:
-        - 
-        - git log --oneline
+        - code crudtastic.code-workspace && cd crudtastic
+        - cd crudtastic-example-app && nodemon --watch . --watch ~/dev/crudtastic
   - projects:
       root: "~/dev/final-project-repos"
       layout: even-vertical
       panes:
         -
         -
+  - curriculum:
+      layout: main-horizontal
+      root: "~/dev/curriculum"
+      panes:
+        -
+        - git fetch -p && git log --oneline
+  - expo:
+    root: "~/dev/expo-learning"
+    layout: even-vertical
+    panes:
+      -
+      -
   - tmp:
       root: "~/tmp"
       layout: main-horizontal
       panes:
         - ls
-        - 
-
+        -

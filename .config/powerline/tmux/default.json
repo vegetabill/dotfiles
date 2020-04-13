@@ -1,0 +1,27 @@
+{
+	"segments": {
+		"right": [
+			{
+				"function": "powerline.segments.common.players.spotify",
+				"name": "spotify",
+				"args": {
+					"format": "{title:.25}🎸{artist:.10}{state_symbol} ",
+					"state_symbols": {
+						"play": "🎵",
+						"pause": "⏸",
+						"stop": "⏹",
+						"fallback": "❓"
+					}
+				},
+				"priority": 49
+			},
+			{
+				"function": "powerline.segments.common.env.user",
+				"priority": 50
+			},
+			{
+				"function": "powerline.segments.common.net.hostname"
+			}
+		]
+	}
+}
