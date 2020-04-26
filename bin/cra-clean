@@ -1,0 +1,31 @@
+git rm src/App.test.js
+git rm src/logo.svg
+git rm src/serviceWorker.js
+git rm src/setupTests.js
+git rm public/logo*
+git rm public/manifest.json
+cat /dev/null > src/index.css
+cat /dev/null > src/App.css 
+sed -e '32,41d' -e '12,26d' -e '6,7d' public/index.html > public/index.clean.html
+mv public/index{.clean,}.html
+sed -e '14,18d' -e '5d' src/index.js > src/index.clean.js
+mv src/index{.clean,}.js
+
+cat <<- EOF > src/App.js
+import React from 'react';
+import './App.css';
+
+function App() {
+  return (
+    <div>
+      Clean as a whistle.
+    </div>
+  );
+}
+
+export default App;
+EOF
+
+
+
+

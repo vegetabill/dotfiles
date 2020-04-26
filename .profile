@@ -7,11 +7,12 @@ alias vi=vim
 alias ls="ls -Alh"
 alias wip="git add -A . && git commit -m 'wip'"
 alias nrt="npm run test"
+alias cra="create-react-app"
 
 export EDITOR=vim
 
 function recreatedb() {
-  dropdb $1 && createdb $1
+  dropdb --if-exists $1 && createdb $1
 }
 
-export PATH=/usr/local/bin:${PATH}:~/.local/bin:~/bin
+export PATH=/usr/local/bin:${PATH}:~/.local/bin:~/dotfiles/bin
