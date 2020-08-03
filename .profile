@@ -15,4 +15,5 @@ function recreatedb() {
   dropdb --if-exists $1 && createdb $1
 }
 
-export PATH=/usr/local/bin:${PATH}:~/.local/bin:~/dotfiles/bin
+export PATH=/usr/local/bin:/usr/local/opt/openjdk/bin:${PATH}:~/.local/bin:~/dotfiles/bin
+alias ic="ibmcloud"

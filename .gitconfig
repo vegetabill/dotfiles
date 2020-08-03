@@ -17,3 +17,4 @@
 	smudge = git-lfs smudge -- %f
 [core]
 	askpass = git-gui--askpass
+	precomposeUnicode = true

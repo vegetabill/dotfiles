@@ -1,0 +1,21 @@
+name: hacking
+root: ~/dev
+
+# Runs on project start, always
+on_project_start: "powerline-config tmux setup"
+
+windows:
+  - backchannel:
+      root: "~/dev/backchannel"
+      layout: even-vertical
+      panes:
+        - code packages
+        - cd packages/backchannel-server
+        - cd packages/backchannel-web
+        - cd packages/backchannel-web
+  - tmp:
+      root: "~/tmp"
+      layout: even-vertical
+      panes:
+        - ls
+        -

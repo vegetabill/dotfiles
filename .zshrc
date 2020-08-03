@@ -74,7 +74,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(sudo git history taskwarrior tmux tmuxinator zsh-completions zsh-autosuggestions pyenv nvm)
+plugins=(sudo git history taskwarrior tmux tmuxinator zsh-completions zsh-autosuggestions pyenv nvm docker rbenv)
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 autoload -U compinit && compinit
@@ -109,3 +109,5 @@ source ~/.profile
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
