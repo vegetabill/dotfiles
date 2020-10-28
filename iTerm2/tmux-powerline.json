@@ -1,5 +1,9 @@
 {
-  "Use Non-ASCII Font" : false,
+  "Ansi 7 Color" : {
+    "Green Component" : 0.73333334922790527,
+    "Red Component" : 0.73333334922790527,
+    "Blue Component" : 0.73333334922790527
+  },
   "Tags" : [
 
   ],
@@ -8,35 +12,25 @@
     "Red Component" : 0.3333333432674408,
     "Blue Component" : 1
   },
-  "Horizontal Spacing" : 1,
-  "Normal Font" : "SourceCodePro+Powerline+AwesomeRegular 17",
+  "Ansi 8 Color" : {
+    "Green Component" : 0.3333333432674408,
+    "Red Component" : 0.3333333432674408,
+    "Blue Component" : 0.3333333432674408
+  },
+  "Ansi 9 Color" : {
+    "Green Component" : 0.3333333432674408,
+    "Red Component" : 1,
+    "Blue Component" : 0.3333333432674408
+  },
   "Bold Color" : {
     "Green Component" : 1,
     "Red Component" : 1,
     "Blue Component" : 1
   },
-  "Link Color" : {
-    "Red Component" : 0,
-    "Color Space" : "sRGB",
-    "Blue Component" : 0.73423302173614502,
-    "Alpha Component" : 1,
-    "Green Component" : 0.35916060209274292
-  },
-  "Ansi 2 Color" : {
-    "Green Component" : 0.73333334922790527,
-    "Red Component" : 0,
-    "Blue Component" : 0
-  },
-  "Right Option Key Sends" : 0,
+  "Guid" : "4D3FCDE7-AF32-4309-BE17-1D39B68E6706",
+  "Custom Directory" : "No",
   "Rows" : 25,
   "Default Bookmark" : "No",
-  "Cursor Guide Color" : {
-    "Red Component" : 0.70213186740875244,
-    "Color Space" : "sRGB",
-    "Blue Component" : 1,
-    "Alpha Component" : 0.25,
-    "Green Component" : 0.9268307089805603
-  },
   "Non-ASCII Anti Aliased" : true,
   "Use Bright Bold" : true,
   "Ansi 10 Color" : {
@@ -44,7 +38,6 @@
     "Red Component" : 0.3333333432674408,
     "Blue Component" : 0.3333333432674408
   },
-  "Icon" : 1,
   "Ambiguous Double Width" : false,
   "Jobs to Ignore" : [
     "rlogin",
@@ -62,6 +55,9 @@
     "Red Component" : 0.73333334922790527,
     "Blue Component" : 0.73333334922790527
   },
+  "Bound Hosts" : [
+
+  ],
   "Working Directory" : "\/Users\/bill",
   "Blinking Cursor" : false,
   "Disable Window Resizing" : true,
@@ -77,7 +73,6 @@
     "Red Component" : 0.70980000495910645,
     "Blue Component" : 1
   },
-  "Only The Default BG Color Uses Transparency" : false,
   "Columns" : 80,
   "Idle Code" : 0,
   "Ansi 13 Color" : {
@@ -85,13 +80,12 @@
     "Red Component" : 1,
     "Blue Component" : 1
   },
-  "Title Components" : 768,
   "Custom Command" : "No",
   "ASCII Anti Aliased" : true,
-  "Non Ascii Font" : "Monaco 12",
+  "Non Ascii Font" : "InconsolataForPowerline-dz 12",
   "Vertical Spacing" : 1,
   "Use Bold Font" : true,
-  "Option Key Sends" : 2,
+  "Option Key Sends" : 0,
   "Selected Text Color" : {
     "Green Component" : 0,
     "Red Component" : 0,
@@ -208,8 +202,8 @@
       "Action" : 10
     },
     "0xf703-0x280000" : {
-      "Action" : 10,
-      "Text" : "f"
+      "Text" : "0x1b 0x1b 0x5b 0x43",
+      "Action" : 11
     },
     "0xf700-0x240000" : {
       "Text" : "[1;5A",
@@ -240,8 +234,8 @@
       "Action" : 10
     },
     "0xf702-0x280000" : {
-      "Action" : 10,
-      "Text" : "b"
+      "Text" : "0x1b 0x1b 0x5b 0x44",
+      "Action" : 11
     },
     "0xf72b-0x20000" : {
       "Text" : "[1;2F",
@@ -273,16 +267,8 @@
     }
   },
   "Window Type" : 0,
-  "Blur Radius" : 12.747091132614212,
   "Background Image Location" : "",
-  "Blur" : true,
-  "Badge Color" : {
-    "Red Component" : 1,
-    "Color Space" : "sRGB",
-    "Blue Component" : 0,
-    "Alpha Component" : 0.5,
-    "Green Component" : 0.1491314172744751
-  },
+  "Blur" : false,
   "Scrollback Lines" : 1000,
   "Send Code When Idle" : false,
   "Close Sessions On End" : true,
@@ -295,8 +281,7 @@
     "Red Component" : 0.3333333432674408,
     "Blue Component" : 1
   },
-  "ASCII Ligatures" : true,
-  "Name" : "Default",
+  "Name" : "iterm2-tmux-with-powerline-profile",
   "Cursor Text Color" : {
     "Green Component" : 1,
     "Red Component" : 1,
@@ -308,54 +293,44 @@
     "Red Component" : 0.73333334922790527,
     "Blue Component" : 0.73333334922790527
   },
-  "Transparency" : 0.061728664340101526,
-  "Ansi 1 Color" : {
-    "Green Component" : 0,
-    "Red Component" : 0.73333334922790527,
-    "Blue Component" : 0
-  },
+  "Transparency" : 0,
   "Ansi 0 Color" : {
     "Green Component" : 0,
     "Red Component" : 0,
     "Blue Component" : 0
   },
-  "Custom Directory" : "No",
+  "Ansi 1 Color" : {
+    "Green Component" : 0,
+    "Red Component" : 0.73333334922790527,
+    "Blue Component" : 0
+  },
   "Ansi 3 Color" : {
     "Green Component" : 0.73333334922790527,
     "Red Component" : 0.73333334922790527,
     "Blue Component" : 0
+  },
+  "Ansi 2 Color" : {
+    "Green Component" : 0.73333334922790527,
+    "Red Component" : 0,
+    "Blue Component" : 0
+  },
+  "Right Option Key Sends" : 0,
+  "Ansi 6 Color" : {
+    "Green Component" : 0.73333334922790527,
+    "Red Component" : 0,
+    "Blue Component" : 0.73333334922790527
+  },
+  "Horizontal Spacing" : 1,
+  "Normal Font" : "InconsolataForPowerline-dz 14",
+  "Ansi 4 Color" : {
+    "Green Component" : 0,
+    "Red Component" : 0,
+    "Blue Component" : 0.73333334922790527
   },
   "Ansi 5 Color" : {
     "Green Component" : 0,
     "Red Component" : 0.73333334922790527,
     "Blue Component" : 0.73333334922790527
   },
-  "Ansi 6 Color" : {
-    "Green Component" : 0.73333334922790527,
-    "Red Component" : 0,
-    "Blue Component" : 0.73333334922790527
-  },
-  "Ansi 7 Color" : {
-    "Green Component" : 0.73333334922790527,
-    "Red Component" : 0.73333334922790527,
-    "Blue Component" : 0.73333334922790527
-  },
-  "Ansi 8 Color" : {
-    "Green Component" : 0.3333333432674408,
-    "Red Component" : 0.3333333432674408,
-    "Blue Component" : 0.3333333432674408
-  },
-  "Ansi 9 Color" : {
-    "Green Component" : 0.3333333432674408,
-    "Red Component" : 1,
-    "Blue Component" : 0.3333333432674408
-  },
-  "Ansi 4 Color" : {
-    "Red Component" : 0.489896389478929,
-    "Color Space" : "sRGB",
-    "Blue Component" : 0.954193115234375,
-    "Alpha Component" : 1,
-    "Green Component" : 0.2257938664406538
-  },
-  "Guid" : "9BB83BD3-023F-4B4D-BC26-10A5116C9B87"
+  "Use Non-ASCII Font" : true
 }
