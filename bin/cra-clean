@@ -1,3 +1,8 @@
+#!/usr/bin/env sh
+
+# Cleans up some of the cruft in a brand new create-react-app repo
+# so you can get moving!
+
 git rm ./src/App.test.js
 git rm ./src/logo.svg
 git rm ./src/serviceWorker.js
@@ -6,8 +11,14 @@ git rm ./public/logo*
 git rm ./public/manifest.json
 cat /dev/null > ./src/index.css
 cat /dev/null > ./src/App.css 
-sed -e '32,41d' -e '12,26d' -e '6,7d' ./public/index.html > ./public/index.clean.html
+
+# ==> public/index.html
+# 32-41 is a comment
+# 12-26 is apple-touch-icon, manifest.json, and comment explaining the %PUBLIC_URL% substitution
+sed -e '32,41d' -e '12,26d' ./public/index.html > ./public/index.clean.html
 mv ./public/index{.clean,}.html
+
+# ==> src/index.js
 sed -e '14,18d' -e '5d' ./src/index.js > ./src/index.clean.js
 mv ./src/index{.clean,}.js
 
