@@ -5,14 +5,12 @@ root: ~/dev
 on_project_start: "powerline-config tmux setup"
 
 windows:
-  - backchannel:
-      root: "~/dev/backchannel"
+  - repo:
+      root: "~/dev/repo"
       layout: even-vertical
       panes:
-        - code packages
-        - cd packages/backchannel-server
-        - cd packages/backchannel-web
-        - cd packages/backchannel-web
+        - code .
+        -
   - tmp:
       root: "~/tmp"
       layout: even-vertical

@@ -1,3 +1,5 @@
 .DS_Store
 .config/configstore
 .config/yarn
+.tmuxinator/*.yml
+!.tmuxinator/template.yml
