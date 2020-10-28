@@ -29,7 +29,7 @@ TNTC but here are some:
 - [Homebrew](https://brew.sh/)
   - `brew install tree wget git tmux`
 - [oh-my-zsh](https://ohmyz.sh/#install)
-  - `brew install fzf` for the fancy autocomplete
+  - `brew install fzf` and then `$(brew --prefix)/opt/fzf/install` (you can skip adding to config since it's already in the version in this repo)
 - [rbenv](https://github.com/rbenv/rbenv#homebrew-on-macos) - needed even if you don't intend to do much ruby dev, for utils like tmuxinator
 - Setup plain tmux
   - `brew install tmux`
