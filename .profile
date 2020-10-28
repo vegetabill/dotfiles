@@ -16,4 +16,12 @@ function recreatedb() {
 }
 
 export PATH=/usr/local/bin:/usr/local/opt/openjdk/bin:${PATH}:~/.local/bin:~/dotfiles/bin
-alias ic="ibmcloud"
+
+# For installing with rbenv
+export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
+
+# nvm
+# export NVM_DIR=~/.nvm
+# source $(brew --prefix nvm)/nvm.sh
+
+eval "$(pyenv init -)"
