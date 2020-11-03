@@ -18,3 +18,5 @@
 [core]
 	askpass = git-gui--askpass
 	precomposeUnicode = true
+[pull]
+	rebase = true
