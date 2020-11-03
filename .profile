@@ -5,7 +5,7 @@ export DEFAULT_USER=`whoami`
 alias cl=clear
 alias vi=vim
 alias ls="ls -Alh"
-alias wip="git add -A . && git commit -m 'wip'"
+alias wip="git add -A . && git commit --no-verify -m 'wip'"
 alias nrt="npm run test"
 alias cra="create-react-app"
 
