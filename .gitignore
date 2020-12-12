@@ -1,5 +1,7 @@
 .DS_Store
 .config/configstore
 .config/yarn
+.config/gh
 .tmuxinator/*.yml
 !.tmuxinator/template.yml
+.profile.private

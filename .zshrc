@@ -76,7 +76,13 @@ COMPLETION_WAITING_DOTS="true"
 # Add wisely, as too many plugins slow down shell startup.
 # Install zsh-autosuggestions at: https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh
 # Install zsh-completions using: https://github.com/zsh-users/zsh-completions
-plugins=(sudo git history taskwarrior tmux tmuxinator zsh-completions zsh-autosuggestions pyenv nvm docker rbenv)
+plugins=(git history taskwarrior tmux tmuxinator zsh-completions zsh-autosuggestions pyenv nvm docker rbenv)
+
+# zplug - https://github.com/zplug/zplug (install via brew)
+export ZPLUG_HOME=/usr/local/opt/zplug
+source $ZPLUG_HOME/init.zsh
+export ENHANCD_FILTER=fzf
+zplug "b4b4r07/enhancd", use:init.sh
 
 # brew install zsh-syntax-highlighting
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

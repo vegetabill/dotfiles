@@ -8,8 +8,19 @@ alias ls="ls -Alh"
 alias wip="git add -A . && git commit --no-verify -m 'wip'"
 alias nrt="npm run test"
 alias cra="create-react-app"
+alias glow="glow -p"
+alias flow="yarn flow"
+alias ys="yarn start"
+alias boot="yarn bootstrap && yarn relay && ys"
+alias pull="git fetch -p && git pull"
+alias reb="git fetch -p && git rebase origin/master"
 
+# Place any confidential aliases in this file
+[[ -f ~/.profile.private ]] && source ~/.profile.private
+
+export LESS="-F -X ${LESS}"
 export EDITOR=vim
+export NODE_REPL_HISTORY=~/.node-repl-history.log
 
 function recreatedb() {
   dropdb --if-exists $1 && createdb $1
