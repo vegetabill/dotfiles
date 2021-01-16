@@ -2,6 +2,7 @@
 .config/configstore
 .config/yarn
 .config/gh
+.config/gtk-2.0
 .tmuxinator/*.yml
 !.tmuxinator/template.yml
 .profile.private
