@@ -28,7 +28,7 @@ function gP {
   else
     local full_name="${prefix}/${short_name}"
   fi
-  gp ${@} --force origin HEAD:${full_name}
+  gp ${@} origin HEAD:${full_name} --force
 }
 
 # Place any confidential aliases in this file
