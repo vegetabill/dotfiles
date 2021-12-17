@@ -76,7 +76,7 @@ COMPLETION_WAITING_DOTS="true"
 # Add wisely, as too many plugins slow down shell startup.
 # Install zsh-autosuggestions at: https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh
 # Install zsh-completions using: https://github.com/zsh-users/zsh-completions
-plugins=(git history taskwarrior tmux tmuxinator zsh-completions zsh-autosuggestions pyenv nvm docker rbenv yarn)
+plugins=(git history taskwarrior tmux tmuxinator zsh-completions zsh-autosuggestions nvm docker rbenv yarn)
 
 # zplug - https://github.com/zplug/zplug (install via brew)
 export ZPLUG_HOME=/usr/local/opt/zplug
@@ -119,9 +119,9 @@ source ~/.profile
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

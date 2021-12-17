@@ -5,18 +5,19 @@ export DEFAULT_USER=`whoami`
 alias cl=clear
 alias vi=vim
 alias ls="ls -Alh"
-alias nrt="npm run test"
 alias cra="create-react-app"
 alias glow="glow -p"
-alias flow="cowsay 'You will have many errors...' && yarn flow && cowsay 'Good job!'"
-alias ys="yarn start"
-alias boot="yarn bootstrap && yarn relay && ys"
-alias die="killall -v node;  killall -v flow"
+alias p="pnpm"
+alias pb="p bootstrap"
+alias ys="p start"
+alias boot="p bootstrap && p migrate && p start"
 
 # git r done
 alias pull="git fetch -p && git pull"
 alias reb="git fetch -p && git rebase origin/master"
 alias gcp="git checkout -p ."
+alias gls="git log --stat"
+alias gstash="git stash save --keep-index"
 
 export GIT_REMOTE_BRANCH_PREFIX="BDP"
 
@@ -50,5 +51,3 @@ export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
 # nvm
 # export NVM_DIR=~/.nvm
 # source $(brew --prefix nvm)/nvm.sh
-
-eval "$(pyenv init -)"

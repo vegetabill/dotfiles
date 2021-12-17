@@ -8,5 +8,5 @@
     "prefix": "csl",
     "body": ["console.log('$1 => ', $1);", "$2"],
     "description": "Bill's custom log output to console"
-  }
+  },
 }

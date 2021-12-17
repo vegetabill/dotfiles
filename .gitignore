@@ -1,5 +1,7 @@
 .DS_Store
 .config/configstore
+.config/iterm2
+.config/tabtab
 .config/yarn
 .config/gh
 .config/gtk-2.0
