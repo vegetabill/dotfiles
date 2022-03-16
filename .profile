@@ -9,6 +9,8 @@ alias cra="create-react-app"
 alias glow="glow -p"
 alias p="pnpm"
 alias pb="p bootstrap"
+alias pt="p test"
+alias pv="p verify"
 alias ys="p start"
 alias boot="p bootstrap && p migrate && p start"
 
@@ -18,6 +20,8 @@ alias reb="git fetch -p && git rebase origin/master"
 alias gcp="git checkout -p ."
 alias gls="git log --stat"
 alias gstash="git stash save --keep-index"
+alias grc="git rebase --continue"
+alias gra="git rebase --abort"
 
 export GIT_REMOTE_BRANCH_PREFIX="BDP"
 
