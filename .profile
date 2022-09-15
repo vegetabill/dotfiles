@@ -8,20 +8,25 @@ alias ls="ls -Alh"
 alias cra="create-react-app"
 alias glow="glow -p"
 alias p="pnpm"
-alias pb="p bootstrap"
+alias pb="p build" 
 alias pt="p test"
 alias pv="p verify"
 alias ys="p start"
-alias boot="p bootstrap && p migrate && p start"
+alias pc="p check"
+alias kn="killall -v -9 node"
+alias watch=viddy
 
 # git r done
 alias pull="git fetch -p && git pull"
 alias reb="git fetch -p && git rebase origin/master"
 alias gcp="git checkout -p ."
+alias glp="git log -p"
 alias gls="git log --stat"
 alias gstash="git stash save --keep-index"
 alias grc="git rebase --continue"
 alias gra="git rebase --abort"
+alias gri="git rebase -i"
+alias gcf="git clean -fdx"
 
 export GIT_REMOTE_BRANCH_PREFIX="BDP"
 
