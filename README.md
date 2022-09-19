@@ -23,9 +23,7 @@ TNTC but here are some:
 - TimeOut (App Store) - microbreak 30sec every 20min for the old peepers
 - [Spectacle](https://www.spectacleapp.com/) for window management shortcuts
 - Flycut clipboard manager (App Store)
-- [Alfred 4](https://www.alfredapp.com/) - Don't install via App Store (outdated version)
-  - Remove the default Cmd+Space shortcut for Spotlight so you can set Alfred
-  - [Web search NPM](alfred://customsearch/NPM%20Pkg%20Search/npm/utf8/nospace/https%3A%2F%2Fwww.npmjs.com%2Fsearch%3Fq%3D%7Bquery%7D) - if it doesn't open via browser, make sure you're on 4.x (not app store)
+- [Raycast](https://www.raycast.com/) - like Alfred but better
 
 ### Coding
 
