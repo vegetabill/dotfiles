@@ -59,8 +59,9 @@ Thanks to the open-source community who spend so much volunteer time to create t
 
 TNTC but here are some:
 
-- [Jessica Deen's Badass Terminal](https://jessicadeen.com/macos-ohmyzsh-tmux-vim-iterm2-powerlevel9k-badass-terminal/)
+[Jessica Deen's Badass Terminal](https://jessicadeen.com/macos-ohmyzsh-tmux-vim-iterm2-powerlevel9k-badass-terminal/)
   - I don't use vim very much so I skipped that but otherwise the entire beginning was perfect (especially her custom font)
+    - `git clone https://github.com/powerline/fonts.git && sh fonts/install.sh`
   - I subbed [powerline](https://github.com/powerline/powerline)
     - This is a bit finnicky to set up
     - Once `pyenv` is properly installed (I used the latest stable 3.x version to set as global), I used the install instructions: https://powerline.readthedocs.io/en/latest/installation.html#pip-installation
