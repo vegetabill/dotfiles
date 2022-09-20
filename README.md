@@ -19,7 +19,7 @@ Without these I might as well have a brick for a keyboard.
 ### Coding
 
 - [Homebrew](https://brew.sh/)
-  - `brew install tree wget git tmux`
+  - `brew install tree wget git`
 - [oh-my-zsh](https://ohmyz.sh/#install)
   - `brew install fzf`
   - `$(brew --prefix)/opt/fzf/install` (yes, yes, no - the dotfiles in here already have the config)
@@ -33,13 +33,14 @@ Without these I might as well have a brick for a keyboard.
 - [manually install nvm](https://github.com/nvm-sh/nvm#install--update-script) - using homebrew install + tmux gave me [prefix errors](https://github.com/nvm-sh/nvm#macos-troubleshooting)
 - Install [Input](https://input.fontbureau.com/info/) font for IDE/editor
 
-### Optional Extras
+### Bonus Extras 🎁
 
 - Think of a truly awesome hostname
   - I have been using cartoon characters since my first job named its servers that way (non-cloud metal!)
   - Set hostname in Sharing settings in the UI
   - then use `sudo scutil --set HostName mr-peanutbutter`
 - TimeOut (App Store) - microbreak 30sec every 20min for the old peepers
+- `brew install cowsay`
 
 ## Acknowledgements
 
