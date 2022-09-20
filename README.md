@@ -49,6 +49,7 @@ Add all these so the rest should be smooth.
   - then use `sudo scutil --set HostName mr-peanutbutter`
 - TimeOut (App Store) - microbreak 30sec every 20min for the old peepers
 - `brew install cowsay`
+- `brew install glow` - pretty markdown in CLI
 
 ## Acknowledgements
 
