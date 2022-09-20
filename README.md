@@ -11,20 +11,30 @@ My preferred config setup, at the moment. Used to share important items across m
   
 ### Let's Get Coding
 
+Add all these so the rest should be smooth.
+
 - [Homebrew](https://brew.sh/)
   - `brew install tree wget git`
-- [oh-my-zsh](https://ohmyz.sh/#install)
-  - `brew install fzf`
-  - `$(brew --prefix)/opt/fzf/install` (yes, yes, no - the dotfiles in here already have the config)
-- [rbenv](https://github.com/rbenv/rbenv#homebrew-on-macos) - needed even if you don't intend to do much ruby dev, for utils like tmuxinator
+- [rbenv](https://github.com/rbenv/rbenv#homebrew-on-macos) 
+  - needed even if you don't intend to do much ruby dev, for utils like tmuxinator
   - `brew install rbenv ruby-build` 
-- Setup plain tmux 🤵‍♀️
+- [manually install nvm](https://github.com/nvm-sh/nvm#install--update-script) - using homebrew install + tmux gave me [prefix errors](https://github.com/nvm-sh/nvm#macos-troubleshooting)
+
+### Power up your measely Transbay Terminal to Salesforce Transit Center 😛
+
+- [oh-my-zsh](https://ohmyz.sh/#install)
+  - `sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"`
+- Setup default [tmux]() 🤵‍♀️
+  - I resisted learning this for years due to the bizarre key shortcuts but it's worth it!
   - `brew install tmux`
   - tpm: `git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`
   - `prefix + I` to fetch other plugins via tpm
 - [tmuxinator](https://github.com/tmuxinator/tmuxinator) - `gem install tmuxinator` (if your system ruby is from rbenv)
-- [manually install nvm](https://github.com/nvm-sh/nvm#install--update-script) - using homebrew install + tmux gave me [prefix errors](https://github.com/nvm-sh/nvm#macos-troubleshooting)
 - Install [Input](https://input.fontbureau.com/info/) font for IDE/editor
+- History search? How about EXTREME SEARCH 
+  - `brew install fzf`
+  - `$(brew --prefix)/opt/fzf/install` (yes, yes, no - the dotfiles in here already have the config)
+
 
 ### Productivity - GUI Apps
 - 🗓 MeetingBar (App Store) - see your next meeting and join with one click
