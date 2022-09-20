@@ -6,17 +6,10 @@ My preferred config setup, at the moment. Used to share important items across m
 
 - Flycut clipboard manager (App Store)
   - Without this I end up just copying empty lines and ruining my clipboard contents
-
-### Productivity - GUI Apps
-
-Without these I might as well have a brick for a keyboard.
-
-- 🗓 MeetingBar (App Store) - see your next meeting and join with one click
-- 👓 [Spectacle](https://www.spectacleapp.com/) for window management shortcuts
 - [Raycast](https://www.raycast.com/) - like Alfred but better
-- 💊 Amphetamine (App Store) - Note: should NOT be used to avoid screen timeout. That would be insecure!
-
-### Coding
+  - I have so many under muscle memory I can no longer use the default Spotlight
+  
+### Let's Get Coding
 
 - [Homebrew](https://brew.sh/)
   - `brew install tree wget git`
@@ -32,6 +25,11 @@ Without these I might as well have a brick for a keyboard.
 - [tmuxinator](https://github.com/tmuxinator/tmuxinator) - `gem install tmuxinator` (if your system ruby is from rbenv)
 - [manually install nvm](https://github.com/nvm-sh/nvm#install--update-script) - using homebrew install + tmux gave me [prefix errors](https://github.com/nvm-sh/nvm#macos-troubleshooting)
 - Install [Input](https://input.fontbureau.com/info/) font for IDE/editor
+
+### Productivity - GUI Apps
+- 🗓 MeetingBar (App Store) - see your next meeting and join with one click
+- 👓 [Spectacle](https://www.spectacleapp.com/) for window management shortcuts
+- 💊 Amphetamine (App Store) - Note: should NOT be used to avoid screen timeout. That would be insecure!
 
 ### Bonus Extras 🎁
 
