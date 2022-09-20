@@ -57,6 +57,8 @@ export PATH=/usr/local/bin:/usr/local/opt/openjdk/bin:${PATH}:~/.local/bin:~/dot
 # For installing with rbenv
 export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
 
-# nvm
-# export NVM_DIR=~/.nvm
-# source $(brew --prefix nvm)/nvm.sh
+nvm
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+eval "$(/opt/homebrew/bin/brew shellenv)"
+eval "$(rbenv init - zsh)"
