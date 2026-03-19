@@ -4,10 +4,9 @@ My preferred config setup, at the moment. Used to share important items across m
 
 ### First Things First
 
-- Flycut clipboard manager (App Store)
-  - Without this I end up just copying empty lines and ruining my clipboard contents
 - [Raycast](https://www.raycast.com/) - like Alfred but better
   - I have so many under muscle memory I can no longer use the default Spotlight
+  - Clipboard History replaced Flycut
   
 ### Let's Get Coding
 
