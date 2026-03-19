@@ -20,7 +20,7 @@ Add all these so the rest should be smooth.
   - `brew install rbenv ruby-build` 
 - [manually install nvm](https://github.com/nvm-sh/nvm#install--update-script) - using homebrew install + tmux gave me [prefix errors](https://github.com/nvm-sh/nvm#macos-troubleshooting)
 
-### Power up your measely Transbay Terminal to Salesforce Transit Center 😛
+### Power up your measly Transbay Terminal to Salesforce Transit Center 😛
 
 - [oh-my-zsh](https://ohmyz.sh/#install)
   - `sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"`
@@ -37,7 +37,7 @@ Add all these so the rest should be smooth.
 
 
 ### Productivity - GUI Apps
-- 🗓 MeetingBar (App Store) - see your next meeting and join with one click
+- 🗓 [Meeting Bar](https://apps.apple.com/us/app/meetingbar/id1532419400?mt=12) (App Store) - see your next meeting and join with one click
 - 👓 [Spectacle](https://www.spectacleapp.com/) for window management shortcuts
 - 💊 Amphetamine (App Store) - Note: should NOT be used to avoid screen timeout. That would be insecure!
 
