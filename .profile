@@ -30,7 +30,7 @@ function recreatedb() {
 # For installing with rbenv
 #export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
 
-nvm
+# section: nvm
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
 eval "$(${HOMEBREW_PREFIX}/bin/brew shellenv)"
