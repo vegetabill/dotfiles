@@ -27,13 +27,11 @@ function recreatedb() {
   dropdb --if-exists $1 && createdb $1
 }
 
-export PATH=/usr/local/bin:/usr/local/opt/openjdk/bin:${PATH}:~/.local/bin:~/dotfiles/bin
-
 # For installing with rbenv
-export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
+#export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
 
 nvm
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
-eval "$(/opt/homebrew/bin/brew shellenv)"
+eval "$(${HOMEBREW_PREFIX}/bin/brew shellenv)"
 eval "$(rbenv init - zsh)"
