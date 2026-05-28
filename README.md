@@ -1,12 +1,6 @@
 My preferred config setup, at the moment. Used to share important items across machines, eternally like mitochondrial DNA.
 
 ## New Macbook Setup Checklist
-
-### First Things First
-
-- [Raycast](https://www.raycast.com/) - like Alfred but better
-  - I have so many under muscle memory I can no longer use the default Spotlight
-  - Clipboard History replaced Flycut
   
 ### Let's Get Coding
 
@@ -29,15 +23,15 @@ Add all these so the rest should be smooth.
   - tpm: `git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`
   - `prefix + I` to fetch other plugins via tpm
 - [tmuxinator](https://github.com/tmuxinator/tmuxinator) - `gem install tmuxinator` (if your system ruby is from rbenv)
-- Install [Input](https://input.fontbureau.com/info/) font for IDE/editor
+- Install [Input Font](https://input.djr.com/) for IDE/editor
 - History search? How about EXTREME SEARCH 
   - `brew install fzf`
   - `$(brew --prefix)/opt/fzf/install` (yes, yes, no - the dotfiles in here already have the config)
 
 
 ### Productivity - GUI Apps
+- [Raycast](https://www.raycast.com/) - Does everything you need: clipboard history, window management, and tons more with extensions
 - 🗓 [Meeting Bar](https://apps.apple.com/us/app/meetingbar/id1532419400?mt=12) (App Store) - see your next meeting and join with one click
-- 👓 [Spectacle](https://www.spectacleapp.com/) for window management shortcuts
 - 💊 Amphetamine (App Store) - Note: should NOT be used to avoid screen timeout. That would be insecure!
 
 ### Bonus Extras 🎁
