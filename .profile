@@ -5,7 +5,7 @@ export DEFAULT_USER=`whoami`
 alias cl=clear
 alias vi=vim
 alias ls="ls -Alh"
-alias wip="git add -A . && git commit --no-verify -m 'wip'"
+alias wip="git add -A . && git commit --no-gpg-sign --no-verify -m 'wip'"
 alias nrt="npm run test"
 alias glow="glow -p"
 alias flow="yarn flow"
@@ -13,8 +13,13 @@ alias pull="git fetch -p && git pull"
 alias reb="git fetch -p && git rebase origin/master"
 alias gcan="git commit --amend --no-edit"
 alias glp="git log -p"
-alias gs="git show"
+alias gls="git log --stat"
+alias gsh="git show"
+alias gs="git-spice"
 alias gcp="git checkout -p"
+alias gri="git rebase -i"
+# needed to allow commit signing
+export GPG_TTY=$(tty)
 
 # Place any confidential aliases in this file
 [[ -f ~/.profile.private ]] && source ~/.profile.private
@@ -29,6 +34,8 @@ function recreatedb() {
 
 # For installing with rbenv
 #export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
+
+export PATH="$HOME/.local/bin:$PATH"
 
 # section: nvm
 export NVM_DIR=~/.nvm

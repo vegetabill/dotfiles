@@ -1,0 +1,19 @@
+{
+  "theme": "dark",
+  "effortLevel": "medium",
+  "permissions": {
+    "allow": [
+      "Read",
+      "Bash(bundle *)",
+      "Bash(bundle exec *)",
+      "Bash(git *)",
+      "Bash(python3 *)",
+      "Bash(ruby *)",
+      "Bash(docker *)",
+      "Bash(python *)"
+    ],
+    "ask": [
+      "Bash(rm *)"
+    ]
+  }
+}

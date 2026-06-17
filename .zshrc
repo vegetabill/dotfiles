@@ -1,3 +1,10 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 ## DOTFILES 
 
 #export ZSH_TMUX_AUTOSTART=true
@@ -14,8 +21,7 @@ export ZSH="${HOME}/.oh-my-zsh"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 #ZSH_THEME="powerline"
 
-# https://github.com/vegetabill/agnoster-zsh-theme
-ZSH_THEME="agnoster-fork"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -45,8 +51,8 @@ DISABLE_UPDATE_PROMPT="true"
 # Uncomment the following line to disable colors in ls.
 # DISABLE_LS_COLORS="true"
 
-# Uncomment the following line to disable auto-setting terminal title.
-# DISABLE_AUTO_TITLE="true"
+# Disable auto-setting terminal title so tmux window names stay manual
+DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
 # ENABLE_CORRECTION="true"
@@ -78,7 +84,15 @@ COMPLETION_WAITING_DOTS="true"
 # Add wisely, as too many plugins slow down shell startup.
 # Install zsh-autosuggestions at: https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh
 # Install zsh-completions using: https://github.com/zsh-users/zsh-completions
-plugins=(git history taskwarrior tmux tmuxinator zsh-completions zsh-autosuggestions nvm docker gitfast rbenv)
+plugins=(git history taskwarrior tmux zsh-completions zsh-autosuggestions docker gitfast rbenv tmux-dir-colors)
+
+autoload -U compinit
+source $ZSH/oh-my-zsh.sh
+# this must come above the customized plugins because it sets HOMEBREW_PREFIX
+source ~/.profile
+
+# brew install zsh-syntax-highlighting
+source ${HOMEBREW_PREFIX}/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # zplug - https://github.com/zplug/zplug (install via brew)
 export ZPLUG_HOME=${HOMEBREW_PREFIX}/opt/zplug
@@ -86,12 +100,10 @@ source ${ZPLUG_HOME}/init.zsh
 export ENHANCD_FILTER=fzf
 zplug "b4b4r07/enhancd", use:init.sh
 
-# brew install zsh-syntax-highlighting
-source ${HOMEBREW_PREFIX}/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-autoload -U compinit && compinit
-source $ZSH/oh-my-zsh.sh
-source ~/.profile
+ZSH_THEME="catppuccin"
+CATPPUCCIN_FLAVOR="mocha" # Required! Options: mocha, flappe, macchiato, latte
+# CATPPUCCIN_SHOW_TIME=true  # Optional! If set to true, this will add the current time to the prompt.
+CATPPUCCIN_SHOW_HOSTNAME="ssh"  # Optional! Options: never, always, ssh
 
 # User configuration
 
@@ -119,10 +131,19 @@ source ~/.profile
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+# test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init --path)"
+# export PYENV_ROOT="$HOME/.pyenv"
+# export PATH="$PYENV_ROOT/bin:$PATH"
+# eval "$(pyenv init --path)"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+# [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Added by Ralph CLI
+export PATH="/Users/bill.dephillips/.local/bin:$PATH"
