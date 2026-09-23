@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Report (Prod)",
+    "link": "http://dashboard-internal.checkr.com/reports/{argument name=\"report_uuid\"}",
+    "icon": "default"
+  },
+  {
+    "name": "jira",
+    "link": "https://checkr.atlassian.net/browse/{argument name=\"issue-key\"}",
+    "icon": "default"
+  },
+  {
+    "name": "Zendesk Ticket",
+    "link": "https://checkr.zendesk.com/agent/tickets/{argument name=\"ticket_id\"}/events",
+    "icon": "default"
+  },
+  {
+    "name": "gitlab",
+    "link": "https://gitlab.checkrhq.net/explore/projects/?name={argument name=\"repo name search\"}",
+    "icon": "default"
+  },
+  {
+    "name": "conf",
+    "link": "https://checkr.atlassian.net/wiki/search?text={argument name=\"search\"}",
+    "icon": "default"
+  },
+  {
+    "name": "candidate",
+    "link": "https://dashboard-internal.checkr.com/candidates/{argument name=\"candidate_id\"}",
+    "icon": "link"
+  },
+  {
+    "name": "gems",
+    "link": "https://rubygems.org/search?query={argument}",
+    "icon": "link"
+  },
+  {
+    "name": "Search Google",
+    "link": "https://google.com/search?q={argument}",
+    "icon": "link"
+  },
+  {
+    "name": "Search DuckDuckGo",
+    "link": "https://duckduckgo.com/?q={argument}",
+    "icon": "link"
+  }
+]
