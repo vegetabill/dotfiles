@@ -1,6 +1,10 @@
 My preferred config setup, at the moment. Used to share important items across machines, eternally like mitochondrial DNA.
 
 ## New Macbook Setup Checklist
+
+Use `./install.sh` to create symlinks in your home folder to this repo.
+
+
   
 ### Let's Get Coding
 
