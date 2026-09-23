@@ -18,6 +18,7 @@ alias gsh="git show"
 alias gs="git-spice"
 alias gcp="git checkout -p"
 alias gri="git rebase -i"
+alias grc="git rebase --continue"
 # needed to allow commit signing
 export GPG_TTY=$(tty)
 
@@ -37,8 +38,15 @@ function recreatedb() {
 
 export PATH="$HOME/.local/bin:$PATH"
 
+# initialise completions with ZSH's compinit
+autoload -Uz compinit && compinit
+
 # section: nvm
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
 eval "$(${HOMEBREW_PREFIX}/bin/brew shellenv)"
 eval "$(rbenv init - zsh)"
+. "$HOME/.cargo/env"
+
+export PATH="~/.local/bin:$PATH"
+
