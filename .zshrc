@@ -84,7 +84,7 @@ COMPLETION_WAITING_DOTS="true"
 # Add wisely, as too many plugins slow down shell startup.
 # Install zsh-autosuggestions at: https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh
 # Install zsh-completions using: https://github.com/zsh-users/zsh-completions
-plugins=(git history taskwarrior tmux zsh-completions zsh-autosuggestions docker gitfast rbenv tmux-dir-colors)
+plugins=(git history taskwarrior tmux zsh-completions zsh-autosuggestions docker gitfast rbenv)
 
 autoload -U compinit
 source $ZSH/oh-my-zsh.sh
@@ -143,7 +143,19 @@ CATPPUCCIN_SHOW_HOSTNAME="ssh"  # Optional! Options: never, always, ssh
 # [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# Added by Ralph CLI
-export PATH="/Users/bill.dephillips/.local/bin:$PATH"
+# open a new window w/2 panes for usual workflow
+repo() {
+  local name="$1"
+  if [ -z "$name" ]; then
+    echo "usage: repo <name>"
+    return 1
+  fi
+  local dir="$HOME/dev/$name"
+  tmux new-window -n "$name"
+  tmux split-window -h -t "$name"
+  tmux send-keys -t "$name.1" "cd $dir && code ." C-m
+  tmux send-keys -t "$name.2" "cd $dir && claude" C-m
+}
